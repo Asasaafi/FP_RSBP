@@ -5,7 +5,7 @@ import time
 # --- KONFIGURASI DATABASE ---
 # URI biasanya default 'bolt://localhost:7687' untuk local
 URI = "bolt://localhost:7687" 
-AUTH = ("neo4j", "12345678") # <--- GANTI '12345678' DENGAN PASSWORD KAMU JIKA BEDA
+AUTH = ("neo4j", "12345678")
 
 def import_data():
     print("1. Membaca data CSV...")

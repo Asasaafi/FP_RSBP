@@ -40,7 +40,6 @@ df['rating_count'] = df['rating_count'].astype(str).str.replace(',', '').apply(p
 # 4. Hapus data duplikat (User ID dan Product ID yang sama persis)
 df.drop_duplicates(inplace=True)
 
-# 5. Simpan file bersih
 output_filename = 'amazon_cleaned.csv'
 df.to_csv(output_filename, index=False)
 
